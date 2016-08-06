@@ -378,3 +378,110 @@ Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0
 
 Started GET "/assets/font-awesome/fontawesome-webfont-ff82aeed6b9bb6701696c84d1b223d2e682eb78c89117a438ce6cfea8c498995.woff2?v=4.5.0" for 68.193.83.98 at 2016-07-30 04:17:45 +0000
 Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 68.193.83.98 at 2016-08-06 03:55:34 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5
+  Rendered pages/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_foot.html.erb (0.9ms)
+Completed 200 OK in 535ms (Views: 501.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 68.193.83.98 at 2016-08-06 03:55:38 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (211.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 347ms (Views: 328.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 68.193.83.98 at 2016-08-06 03:55:40 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (95.4ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 275ms (Views: 268.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 68.193.83.98 at 2016-08-06 03:55:45 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nu86I1np7FpCQP0/o7fUaD2fA07tRRSIwMtYbjlUwnjD/AwJOR5QmHRFRw0Y4fraLaoSlEJsOaBSN9/E+8vI4A==", "user"=>{"email"=>"adnanmcj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "adnanmcj@gmail.com"]]
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nu86I1np7FpCQP0/o7fUaD2fA07tRRSIwMtYbjlUwnjD/AwJOR5QmHRFRw0Y4fraLaoSlEJsOaBSN9/E+8vI4A==", "user"=>{"email"=>"adnanmcj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (11.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (38.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 270ms (Views: 145.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 68.193.83.98 at 2016-08-06 03:55:50 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SrvdLjsYQ2vgwKeZcfck+M16ICmCJkq5MiQcRo/6umUXqOsEW+//qdbFHavKoQpK3U8x8y0PZ5Gg2JvsTWWw/Q==", "user"=>{"email"=>"adnanmcj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "adnanmcj@gmail.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SrvdLjsYQ2vgwKeZcfck+M16ICmCJkq5MiQcRo/6umUXqOsEW+//qdbFHavKoQpK3U8x8y0PZ5Gg2JvsTWWw/Q==", "user"=>{"email"=>"adnanmcj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 68.193.83.98 at 2016-08-06 03:55:55 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (32.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for 68.193.83.98 at 2016-08-06 03:55:57 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendered pages/_mailer.html.erb (19.1ms)
+  Rendered pages/contact.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_foot.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 108.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 68.193.83.98 at 2016-08-06 03:55:59 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 68.193.83.98 at 2016-08-06 03:55:59 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 128ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 68.193.83.98 at 2016-08-06 03:56:02 +0000
+Cannot render console from 68.193.83.98! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 5[0m
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_foot.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.3ms)
